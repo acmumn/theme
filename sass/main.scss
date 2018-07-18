@@ -70,11 +70,11 @@ header {
     border-top: 10px solid $brand;
     list-style-type: none;
     font-size: 1.3em;
-    @include media-breakpoint-down(sm) {
+    @media only screen and (max-width: $breakpoint-small) { 
         padding-bottom: 0;
     }
     a.title {
-        @include media-breakpoint-down(sm) {
+        @media only screen and (max-width: $breakpoint-small) { 
             display: block;
             text-align: center;
             margin-right: 0;
@@ -89,7 +89,7 @@ header {
     div#nav {
         display: inline;
     }
-    @include media-breakpoint-down(sm) {
+    @media only screen and (max-width: $breakpoint-small) { 
         div#nav {
             text-align: center;
             display: block;

@@ -93,10 +93,9 @@ $breakpoint-large: 60em; // 960px
 
 $grid-breakpoints: (
   xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
+  sm: $breakpoint-small,
+  md: $breakpoint-med,
+  lg: $breakpoint-large,
 ) !default;
 
 @mixin media-breakpoint-down($name, $breakpoints: $grid-breakpoints) {
