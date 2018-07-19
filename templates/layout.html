@@ -4,7 +4,7 @@
 
         <div id="nav">
             {% for link in config.extra.nav_links %}
-                <a href="{{ link.url | safe }}" class="link">{{ link.text }}</a>
+                <a href="{{ link.url | safe }}" class="link">{{ link.text | replace(from=" ", to="&nbsp;" }}</a>
             {% endfor %}
         </div>
     </div>
@@ -23,10 +23,8 @@
             <div class="col mobile-hide">
                 <h5 class="footer-heading">Useful Links</h5>
                 <ul>
-                    <li>
-                        <a href="/events">Events</a>
-                        <a href="/officers">Officers</a>
-                    </li>
+                    <li><a href="/events">Events</a><li>
+                    </li><a href="/officers">Officers</a></li>
                 </ul>
             </div>
             <div class="col" id="getintouch">
