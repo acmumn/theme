@@ -13,6 +13,9 @@
                         <div>
                             {% if event.summary %}{{ event.summary | safe }}{% else %}{{ event.content | safe }}{% endif %}
                         </div>
+                        <small style="margin-top: 10px; display: block; text-align: right;">
+                            <i>Click to learn more</i>
+                        </small>
                     </a>
                 </div>
             {% endfor %}
