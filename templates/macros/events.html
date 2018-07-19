@@ -7,13 +7,13 @@
             {% for event in events %}
                 <div class="timeline-item timeline-item--{% if loop.index is odd %}odd{% else %}even{% endif %}">
                     <div class="timeline-item-node"></div>
-                    <div class="panel nocolorlink">
+                    <a class="panel nocolorlink" href="{{ event.permalink }}">
                         <h4>{{ event.title }}</h4>
                         <small>{{ event.date }}</small>
                         <div>
                             {% if event.summary %}{{ event.summary | safe }}{% else %}{{ event.content | safe }}{% endif %}
                         </div>
-                    </div>
+                    </a>
                 </div>
             {% endfor %}
         </div>
