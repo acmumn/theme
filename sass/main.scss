@@ -5,6 +5,7 @@
 @import "color.scss";
 @import "footer.scss";
 @import "fonts.scss";
+@import "timeline.scss";
 @import "mixins.scss";
 
 html,
@@ -57,12 +58,12 @@ abbr[title] {
     border-bottom: 1px dotted;
 }
 
-.container {
+/* .container {
     h3 {
         margin-top: 27px;
         margin-bottom: 10px;
     }
-}
+} */
 
 header {
     padding-bottom: 25px;

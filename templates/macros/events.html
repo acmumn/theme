@@ -1,0 +1,24 @@
+{% macro eventlisting(events) %}
+    <div class="timeline">
+    {% if events | length %}
+        <div class="line">
+            <div class="timeline-path"></div>
+            <div class="timeline-item--offset"></div>
+            {% for event in events %}
+                <div class="timeline-item timeline-item--{% if loop.index is odd %}odd{% else %}even{% endif %}">
+                    <div class="timeline-item-node"></div>
+                    <div class="panel nocolorlink">
+                        <h4>{{ event.title }}</h4>
+                        <small>{{ event.date }}</small>
+                        <div>
+                            {% if event.summary %}{{ event.summary | safe }}{% else %}{{ event.content | safe }}{% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>No events to display!</p>
+    {% endif %}
+    </div>
+{% endmacro eventlisting %}
