@@ -13,7 +13,7 @@
                 </small>
             </td>
             <td style="text-align: right;" class="hidden-sm">
-                <small>{{ post.tags | join(sep=", ") }}</small>
+                <small>{{ post.tags | default(value=[]) | join(sep=", ") }}</small>
             </td>
         </tr>
     {% endfor %}
