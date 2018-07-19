@@ -4,7 +4,7 @@
 
         <div id="nav">
             {% for link in config.extra.nav_links %}
-                <a href="{{ link.url | safe }}" class="link">{{ link.text | replace(from=" ", to="&nbsp;" }}</a>
+                <a href="{{ link.url | safe }}" class="link">{{ link.text | replace(from=" ", to="&nbsp;") }}</a>
             {% endfor %}
         </div>
     </div>
