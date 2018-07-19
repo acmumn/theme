@@ -2,6 +2,6 @@
 {% import "macros/blog.html" as blog %}
 
 {% block pagecontent %}
-    <h1>Blog</h1>
+	<h1>{{ section.title }}</h1>
     {{ blog::postlisting(posts=section.pages) }}
 {% endblock %}
