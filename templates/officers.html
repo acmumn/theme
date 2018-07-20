@@ -1,0 +1,10 @@
+{% extends "page.html" %}
+
+{% block header %}
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("tr:contains(Todd)").css("opacity", "0.01");
+	});
+</script>
+{%endblock%}
